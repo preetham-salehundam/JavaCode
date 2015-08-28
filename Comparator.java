@@ -12,8 +12,8 @@ public abstract class comparator implements Comparator{
 		v.add(10);
 		v.add(20);
 		System.out.println(v);
-		Comparator<Integer> c = Collections.reverseOrder();/*returns a reference to C which when send as parameter to sort() will                                                           sort the unsorted Vector in descending order*/
-		Comparator a = Collections.reverseOrder(c);/*reverses the order of the Comparator hence return ref which when fed to sort()                                                 gives ascending order*/
+		Comparator<Integer> c = Collections.reverseOrder();/*returns a reference to C which when send as parameter to sort() will sort the unsorted Vector in descending order*/
+		Comparator a = Collections.reverseOrder(c);/*reverses the order of the Comparator hence return ref which when fed to sort() gives ascending order*/
 		Collections.sort(v,c);
 		System.out.println(v);
 		Collections.sort(v,a);
