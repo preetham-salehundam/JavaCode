@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+class Dog{
+	public void disp(){
+		System.out.println("abc");
+	}
+}
+
+public class ObjectsArray {
+
+	public static void main(String[] args) {
+		//ArrayList<Object> al= new ArrayList<Object>(10);
+		ArrayList<Object>al1= new ArrayList<Object>();
+		int i,x;
+		
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Enter the number of objects to be created");
+		x=scan.nextInt();
+		scan.close();
+		int flag=0;
+		for(i=0;i<x;i++){
+			al1.add(new Dog());
+			System.out.println(al1.get(i));
+			((Dog) al1.get(i)).disp();
+			flag=++flag;
+			System.out.println("no of objects created is "+flag);
+			
+		}
+		
+	}
+
+}
